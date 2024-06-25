@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && cp -r public/ dist && zip -r kleinanzeigen-ad-swatter.zip dist",
-    "release": "release-it"
+    "release": "GITHUB_TOKEN=$(gh auth token) release-it"
   },
   "engines": {
     "node": "^20.14.0"

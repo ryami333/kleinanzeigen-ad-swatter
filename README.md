@@ -1,67 +1,14 @@
-# Chrome Extension TypeScript Starter
+# Kleinanzeigen Ad Swatter
 
-![build](https://github.com/chibat/chrome-extension-typescript-starter/workflows/build/badge.svg)
+Chrome extension to remove ad listings on Ebay Kleinanzeigen
 
-Chrome Extension, TypeScript and Visual Studio Code
+## Installation
 
-## Prerequisites
+Here’s how you can install a Chrome extension from a ZIP file:
 
-- [node + npm](https://nodejs.org/) (Current Version)
-
-## Option
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-
-## Includes the following
-
-- TypeScript
-- Webpack
-- React
-- Jest
-- Example Code
-  - Chrome Storage
-  - Options Version 2
-  - content script
-  - count up badge number
-  - background
-
-## Project Structure
-
-- src/typescript: TypeScript source files
-- src/assets: static files
-- dist: Chrome Extension directory
-- dist/js: Generated JavaScript files
-
-## Setup
-
-```
-npm install
-```
-
-## Import as Visual Studio Code project
-
-...
-
-## Build
-
-```
-npm run build
-```
-
-## Build in watch mode
-
-### terminal
-
-```
-npm run watch
-```
-
-### Visual Studio Code
-
-Run watch mode.
-
-type `Ctrl + Shift + B`
-
-## Load extension to chrome
-
-Load `dist` directory
+1. Download the ZIP file of the Chrome extension to your computer.
+2. Extract the ZIP file to a folder. You can use built-in tools or third-party software like WinRAR or 7-Zip.
+3. Open Chrome and navigate to chrome://extensions/.
+4. Enable Developer Mode by toggling the switch in the top right corner.
+5. Click on “Load unpacked” and select the folder where you extracted the ZIP file.
+6. The extension should now appear in your list of installed extensions and be active.

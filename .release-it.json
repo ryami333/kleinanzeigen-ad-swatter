@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/release-it/schema/release-it.json",
   "github": {
     "release": true,
-    "assets": ["kleinanzeigen-ad-swatter.zip"]
+    "assets": ["kleinanzeigen-ad-swatter.zip", "dist/*"]
   },
   "npm": {
     "publish": false

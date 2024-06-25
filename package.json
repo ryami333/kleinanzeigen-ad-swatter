@@ -4,7 +4,7 @@
   "description": "Chrome extension to remove ad listings on Ebay Kleinanzeigen",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack/webpack.prod.js && zip kleinanzeigen-ad-swatter.zip dist"
+    "build": "webpack --config webpack/webpack.prod.js"
   },
   "engines": {
     "node": "^20.14.0"

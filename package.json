@@ -1,6 +1,6 @@
 {
   "name": "kleinanzeigen-ad-swatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chrome extension to remove ad listings on Ebay Kleinanzeigen",
   "main": "index.js",
   "scripts": {

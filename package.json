@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/ryami333/kleinanzeigen-ad-swatter.git"
   },
   "dependencies": {
     "react": "^18.2.0",

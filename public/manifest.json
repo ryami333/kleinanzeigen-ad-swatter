@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.kleinanzeigen.de/*"],
-      "js": ["js/content_script.js"]
+      "js": ["content_script.js"]
     }
   ]
 }

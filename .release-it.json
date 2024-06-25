@@ -8,6 +8,10 @@
     "publish": false
   },
   "hooks": {
-    "before:init": ["npm run build"]
+    "before:init": [
+      "npx tsc --noEmit",
+      "npx prettier . --check",
+      "npm run build"
+    ]
   }
 }

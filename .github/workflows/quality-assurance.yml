@@ -1,0 +1,27 @@
+name: Quality Assurance
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  main:
+    strategy:
+      matrix:
+        script: ["npx build", "npx tsc", "npx prettier . --check"]
+      # Default behaviour is "true" - which cancels all queued or in-progress jobs when one fails, which we don't want.
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out git
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "npm"
+      - name: Install Dependencies
+        run: npm ci
+      - name: Script
+        run: ${{ matrix.script }}

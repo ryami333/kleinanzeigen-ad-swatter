@@ -7,7 +7,14 @@ if (window.location.hostname === "www.kleinanzeigen.de") {
        * looping over all children.
        */
       const ad = document.querySelector(
-        ".j-liberty-wrapper, .ad-listitem:not(:has(article))"
+        [
+          ".j-liberty-wrapper", // Search page leading ads
+          ".ad-listitem:not(:has(article))", // Inline search-result ads
+          "[data-liberty-position-name='home-billboard']", // Header ads
+          "[data-liberty-position-name='srps-btf-billboard'", // Footer ads
+          ".site-base--left-banner--full", // Left margin ads
+          ".site-base--right-banner--full", // Right margin ads
+        ].join(", ")
       );
       if (ad) {
         ad.remove();
@@ -15,9 +22,9 @@ if (window.location.hostname === "www.kleinanzeigen.de") {
     }
   });
 
-  const siteContent = document.querySelector("#site-content");
-  if (siteContent) {
-    observer.observe(siteContent, {
+  const body = document.querySelector("body");
+  if (body) {
+    observer.observe(body, {
       attributes: false,
       childList: true,
       subtree: true,

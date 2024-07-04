@@ -4,7 +4,7 @@
   "description": "Chrome extension to remove ad listings on Ebay Kleinanzeigen",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cp -r public/ dist && ./convert_icons.sh && zip -r kleinanzeigen-ad-swatter.zip dist",
+    "build": "cp -r public/ dist && ./convert_icons.sh && zip -r kleinanzeigen-ad-swatter.zip dist",
     "release": "GITHUB_TOKEN=$(gh auth token) release-it"
   },
   "engines": {

@@ -3,11 +3,12 @@
     "strict": true,
     "target": "es6",
     "moduleResolution": "bundler",
+    "checkJs": true,
+    "allowJs": true,
     "module": "ES6",
+    "noEmit": true,
     "esModuleInterop": true,
     "sourceMap": false,
-    "rootDir": "src",
-    "outDir": "dist",
     "noEmitOnError": true
   }
 }

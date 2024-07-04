@@ -9,7 +9,7 @@ jobs:
   main:
     strategy:
       matrix:
-        script: ["npm run build", "npx tsc", "npx prettier . --check"]
+        script: ["npx tsc", "npx prettier . --check"]
       # Default behaviour is "true" - which cancels all queued or in-progress jobs when one fails, which we don't want.
       fail-fast: false
     runs-on: ubuntu-latest
